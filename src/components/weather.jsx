@@ -433,6 +433,7 @@ export default function Weather() {
       }));
       setForecast(convertedForecast);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- only re-run when unit changes to convert existing data
   }, [unit]);
 
   const handleLanguageChange = (newLanguage) => {

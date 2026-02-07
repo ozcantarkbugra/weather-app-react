@@ -10,7 +10,6 @@ const WeatherCharts = ({ forecast, unit, language = "tr" }) => {
 
   const maxTemps = forecast.map((day) => Math.round(day.main.temp_max));
   const minTemps = forecast.map((day) => Math.round(day.main.temp_min));
-  const humidity = forecast.map((day) => day.main.humidity);
   const days = forecast.map((day) => {
     const date = new Date(day.dt_txt);
     const dayNames = ["Paz", "Pzt", "Sal", "Çar", "Per", "Cum", "Cmt"];

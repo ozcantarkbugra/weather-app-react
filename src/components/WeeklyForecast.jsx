@@ -8,20 +8,6 @@ const WeeklyForecast = ({ forecast, language = "tr", unit = "metric" }) => {
 
   const t = translations[language] || translations.tr;
 
-  const getDayName = (dateString) => {
-    const date = new Date(dateString);
-    const days = [
-      "Pazar",
-      "Pazartesi",
-      "Salı",
-      "Çarşamba",
-      "Perşembe",
-      "Cuma",
-      "Cumartesi",
-    ];
-    return days[date.getDay()];
-  };
-
   const getShortDayName = (dateString) => {
     const date = new Date(dateString);
     const days = ["Paz", "Pzt", "Sal", "Çar", "Per", "Cum", "Cmt"];
